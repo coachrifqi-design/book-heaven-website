@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore - Contact & Join</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Haven Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Books</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact & Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have questions about a specific book or want to pre-order an upcoming release? Reach out to us or sign up for our exclusive member club below.</p>
+        </section>
+
+        <section>
+            <!-- Requirement: One complete HTML form, fieldset, legend, and validation -->
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Become a Book Haven Member</legend>
+                    
+                    <p>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required placeholder="John Doe">
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </p>
+                    
+                    <p>
+                        <label for="phone">Phone Number (Format: 123-456-7890):</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+                    </p>
+                    
+                    <p>
+                        <button type="submit">Submit Registration</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Book Haven Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
