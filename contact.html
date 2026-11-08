@@ -12,22 +12,21 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Books</a></li>
+                <li><a href="product.html">Books</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact & Join</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section>
             <h2>Contact Us</h2>
             <p>Have questions about a specific book or want to pre-order an upcoming release? Reach out to us or sign up for our exclusive member club below.</p>
         </section>
-
         <section>
             <!-- Requirement: One complete HTML form, fieldset, legend, and validation -->
-            <form action="#" method="POST">
+            <form action="#" method="POST" novalidate>
+                <!-- Keterangan: novalidate ditambahkan agar validasi kustom JavaScript berfungsi penuh tanpa diinterupsi validasi bawaan browser -->
                 <fieldset>
                     <legend>Become a Book Haven Member</legend>
                     
@@ -53,9 +52,11 @@
             </form>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2026 Book Haven Bookstore. All rights reserved.</p>
     </footer>
+
+    <!-- Penghubung Script Interaktivitas JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
