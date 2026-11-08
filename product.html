@@ -12,13 +12,12 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Books</a></li>
+                <li><a href="product.html">Books</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact & Join</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section>
             <h2>Explore Our Book Catalog</h2>
@@ -31,18 +30,41 @@
             </picture>
         </section>
 
+        <!-- Tambahan Komponen Fitur Interaktif Wishlist Tracker -->
+        <section class="wishlist-sidebar">
+            <h3>Daftar Wishlist Saya</h3>
+            <div id="wishlist-items">
+                <!-- Konten dinamis akan disuntikkan oleh script.js -->
+            </div>
+        </section>
+
         <section>
             <h3>Our Curated Genres</h3>
-            <ul>
-                <li><strong>Fiction & Novels:</strong> Deep stories from world-class writers.</li>
-                <li><strong>Biographies:</strong> Real life experiences that inspire changes.</li>
-                <li><strong>Children's Corner:</strong> Interactive and fun books for young readers.</li>
+            <!-- Katalog Buku dengan Tombol Interaktif Terkoneksi JavaScript -->
+            <ul class="book-catalog-list">
+                <li class="book-card">
+                    <strong>Fiction & Novels:</strong> Deep stories from world-class writers.
+                    <br>
+                    <button type="button" class="btn-add-wishlist" data-title="Fiction & Novels Collection" data-price="Premium Edition">Add to Wishlist</button>
+                </li>
+                <li class="book-card">
+                    <strong>Biographies:</strong> Real life experiences that inspire changes.
+                    <br>
+                    <button type="button" class="btn-add-wishlist" data-title="Biographies Collection" data-price="Standard Edition">Add to Wishlist</button>
+                </li>
+                <li class="book-card">
+                    <strong>Children's Corner:</strong> Interactive and fun books for young readers.
+                    <br>
+                    <button type="button" class="btn-add-wishlist" data-title="Children's Corner Books" data-price="Illustrated Edition">Add to Wishlist</button>
+                </li>
             </ul>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2026 Book Haven Bookstore. All rights reserved.</p>
     </footer>
+
+    <!-- Penghubung Script Interaktivitas JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
